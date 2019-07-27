@@ -16,7 +16,7 @@ thisblock = input(' BLOCK INDEX? = ');
 el = 0; % 1 = Eyelink on; 0 = Eyelink off;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-ISI = 3:0.1:3.5; % [second]
+ISI = 3:0.1:3.5; % [second] Inter-soundonset-interval. The distance between the onset of the current trial and the next sound
 Fs = 44100; % sampling rate for sound play
 stimDur = 0.5; % [second] sound duration. this must be pre-set and identical across all sounds
 
