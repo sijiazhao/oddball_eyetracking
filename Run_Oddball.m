@@ -278,7 +278,7 @@ if strcmp(Eyelinkuse,'on')==1
     Screen('DrawLine', window, [black black black], fxpointV(1), fxpointV(2), fxpointV(3), fxpointV(4), 4);
     Screen('Flip', window);
     
-    WaitSecs(2); % this needs to add into ISI
+    WaitSecs(2);
 end % el
 
 %% Wait for resting state
@@ -311,7 +311,7 @@ for k = 1:ntrial
     PsychPortAudio('Start', padevice, 1, 0, 1); %Start audio playback, return onset timestamp.
 
     %% Wait for ISI
-    WaitSecs(stimDur + ISI(randperm(length(ISI),1))); %wait for ISI
+    WaitSecs(ISI(randperm(length(ISI),1))); %wait for ISI
     
     %% Check if you want to terminate the experiment
     [ keyIsDown, ~, keyCode ] = KbCheck;
