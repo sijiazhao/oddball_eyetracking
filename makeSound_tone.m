@@ -6,7 +6,7 @@ clear;
 
 Fs = 44100;
 stimDur = 0.5;
-freq = 1000;
+freq = 500;
 
 %create a tone of frequency f
 sd = 1/Fs;

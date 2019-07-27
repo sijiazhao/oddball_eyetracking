@@ -1,4 +1,4 @@
-%% Copyright (c) 2019, Sijia Zhao.  All rights reserved.
+% Copyright (c) 2019, Sijia Zhao.  All rights reserved.
 
 % Note: Search '% CHANGE BASED ON YOUR SETUP!' to find lines you must customise
 % for your own setup.
@@ -22,7 +22,7 @@ stimDur = 0.5; % [second] sound duration. this must be pre-set and identical acr
 
 path_in = './SoundFiles/';
 
-condlist = {'tone_1000Hz','noise_white','ht_200Hz'};
+condlist = {'tone_500Hz','noise_white','ht_200Hz'};
 ntrial_c = [60, 10, 10]; %number of trials per condition
 ntrial = sum(ntrial_c);
 
